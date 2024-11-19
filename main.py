@@ -5,6 +5,18 @@ from openai import OpenAI
 # Initialize OpenAI client
 client = OpenAI(api_key=st.secrets["general"]["OPENAI_API_KEY"])
 
+st.markdown(
+    """
+    <style>
+        header {
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 # Streamlit app
 st.set_page_config(page_title="Chekit", layout="centered")
 st.title("Chekit - Smart Shopping to Investing 🛍️💹")
